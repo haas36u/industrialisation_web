@@ -1,0 +1,13 @@
+language: php
+php:
+- '7.1'
+- '7.0'
+before_script:
+- php -v
+- composer install
+notifications:
+  email:
+    recipients:
+    - haasmyriam8@gmail.com
+    on_success: change
+    on_failure: always
