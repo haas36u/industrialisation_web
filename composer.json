@@ -6,6 +6,11 @@
             "email": "haasmyriam@yahoo.com"
         }
     ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
     "require": {
         "phpunit/phpunit" : "^6.5"
     }
