@@ -1,18 +1,14 @@
 language: php
 php:
-- '7.1'
-matrix:
-  allow_failures:
-  -php: 7.0
+- 7.1
 before_script:
 - composer install
 script:
+- docker run --rm -v $(pwd):/app phpqa/security-checker security:check
 - ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 notifications:
   email:
-    recipients:
-    - haasmyriam8@gmail.com
-    on_success: change
+    on_success: never
     on_failure: always
 deploy:
   provider: heroku
