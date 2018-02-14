@@ -4,7 +4,6 @@ php:
 before_script:
 - composer install
 script:
-- docker run --rm -v $(pwd):/app phpqa/phpcs .
 - docker run --rm -v $(pwd):/app phpqa/security-check security:check
 - ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 notifications:
