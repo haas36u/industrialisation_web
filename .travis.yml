@@ -3,8 +3,9 @@ php:
 - '7.1'
 - '7.0'
 before_script:
-- php -v
 - composer install
+script:
+- ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 notifications:
   email:
     recipients:
