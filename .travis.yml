@@ -12,6 +12,8 @@ script:
 - ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 notifications:
   email:
+    recipients:
+    - haasmyriam8@gmail.com
     on_success: never
     on_failure: always
 deploy:
