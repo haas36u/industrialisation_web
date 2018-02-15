@@ -38,7 +38,7 @@ final class Email
      *
      * @return string  Email
     */
-    private function __construct(string $email)
+    private function __construct(string $_email)
     {
         $this->ensureIsValidEmail($_email);
 
