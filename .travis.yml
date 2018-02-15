@@ -8,6 +8,7 @@ matrix:
 before_script:
 - composer install
 script:
+- docker run --rm -v $(pwd):/app phpqa/phpcs src
 - docker run --rm -v $(pwd):/app phpqa/security-checker security:check
 - ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 notifications:
