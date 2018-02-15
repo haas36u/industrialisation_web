@@ -1,6 +1,10 @@
 language: php
 php:
+- 7.0
 - 7.1
+matrix:
+  allow_failures:
+  - php: 7.0
 before_script:
 - composer install
 script:
@@ -17,3 +21,6 @@ deploy:
   app: esgi-environnement-web
   api_key:
     secure: VGhRiW3WVrONzX4ERtVMqwTm8cfz6b5xPr2ZPqPgnhV9myqDvMWZTwr8B6St7PHnc4h+/mP9MC16ZjliKHYFb2QHLluMRDm6XaOIiDI7YDkNnhqFoEjidnoN7g4YYGDcZwEav7MvEWkpnOwxB/4r6DvyHK0dcchBpUqMfiTeXx/5WIbzmEwMPJvkvjTa5X4DR/y7kATsJuc9CFsacldKg7f0me56+6OfyGVL4HSzPFoM7YO+Fgk/yKmPXvHzCkeo7B/+DqhRe5G7fz6P/UiWaAM2VShYbRNICqYYHJIma2VCXy7xBaU3i6gYchtbHazdg2Z7EFrTfSreA7oFJ0KnkiFwUkw2o6UYpZdvx4w79zD+SZH8WhxZL2UNsfn7u7p0OKfgBJLBT7I5GvoX52nJE5qBe2gU1QD9FHCstChjsgX3Mc7vvzYGzIvuJZORD03kdRjuRvtvgtS0t6Az/a62nIRtXwCxnFOtvn4FuTWGjaR1vz0A7Iy/CV25ZmLEJ1hw9nShJhvL6+p31AL/2M8yJM7aN7zVCAFA5OKZvNGGsCbxmlpHj159t/7jcsTlEQ2wlLeItYoZcOvUr9Rx/xecIsrndX/NSkitiYcvYvDjPoTB+iNIDCXcIaGhQwMl56fkTplkj272x8660xSCkpxtneNlTl0jH3O2PgntAA7Y48w=
+  on:
+    branch: master
+    repo: haas36u/industrialisation_web
