@@ -28,6 +28,7 @@ declare(strict_types=1);
 
 final class Email
 {
+
     private $_email;
 
      /**
@@ -37,7 +38,7 @@ final class Email
      *
      * @return string  Email
     */
-    private function __construct(string $_email)
+    private function __construct(string $email)
     {
         $this->ensureIsValidEmail($_email);
 
