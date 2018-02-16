@@ -1,5 +1,3 @@
 <h1>My website</h1>
 
-<?php
-    echo "Hello";
-?>
+<img src="http://www.peopleofar.com/wp-content/uploads/JNTU-EXPRESS-Welcome-738x355.jpg" alt="Welcome">
