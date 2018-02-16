@@ -36,9 +36,9 @@ final class Email
      *
      * @param string $email Email
      *
-     * @return string  Email
+     * @return Email  Email
     */
-    public static function __fromString(string $email): self
+    public static function fromString(string $email): self
     {
         return new self($email);
     }
