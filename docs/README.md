@@ -1,12 +1,14 @@
-# Email checker - industrialisation_web
+# Presentation
 
-## How can I contribute ?
+Hello ! This is a new project.
+
+# How can I contribute ?
 
 We accept contributions via Pull Requests on Github.
 
 Just be careful about : 
 
-- **Add tests!** - Your patch probably won't be accepted if it doesn't have tests. Any new tests must be placed in the tests/OpenCFP directory and properly namespaced at OpenCFP\Test. There will be an ongoing effort to move remaining tests from tests/unit into that namespace.
+- **Add tests!** - Your patch probably won't be accepted if it doesn't have tests
 
 - **Tests must be clear in meaning** - We value clarity in meaning / purposes behind tests. If there is excessive setup required for a test, it should be hidden behind an intention-revealing (and possibly re-usable) method.
 
