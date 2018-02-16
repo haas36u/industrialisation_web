@@ -15,7 +15,7 @@ script:
 notifications:
   email:
     recipients:
-    - haasmyriam8@gmail.com
+      - haasmyriam8@gmail.com
     on_success: never
     on_failure: always
 deploy:
