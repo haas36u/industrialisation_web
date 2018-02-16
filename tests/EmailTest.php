@@ -23,7 +23,7 @@ final class EmailTest extends TestCase
     public function testCanBeUsedAsString(): void
     {
         $this->assertEquals(
-            'user@example.com',
+            'user1@example.com',
             Email::fromString('user@example.com')
         );
     }
