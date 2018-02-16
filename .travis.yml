@@ -9,7 +9,7 @@ before_script:
 - composer install
 - wget http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -O php-cs-fixer
 script:
-- php php-cs-fixer fix --dry-run --diff --diff-format=udiff
+- php php-cs-fixer fix --dry-run --diff --diff-format=udiff src
 - docker run --rm -v $(pwd):/app phpqa/security-checker security:check
 - ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 
