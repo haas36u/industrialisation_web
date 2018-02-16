@@ -13,8 +13,7 @@ final class EmailTest extends TestCase
         );
     }
 
-    public function testCannotBeCreatedFromInvalidEmailAddress(): void
-    {
+    public function testCannotBeCreatedFromInvalidEmailAddress(): void{
         $this->expectException(InvalidArgumentException::class);
 
         Email::fromString('invalid');
@@ -23,7 +22,7 @@ final class EmailTest extends TestCase
     public function testCanBeUsedAsString(): void
     {
         $this->assertEquals(
-            'user1@example.com',
+            'user@example.com',
             Email::fromString('user@example.com')
         );
     }
